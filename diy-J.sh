@@ -23,25 +23,46 @@ echo "RELEASE_KEY_PASSWORD=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
 #名称修改
 #sed -i 's/TVBox/LionMovies/g' $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
 
- #改自定义功能
-#sed -i 's/自定义jar加载成功/LionMovies 播放配置加载成功,欢迎使用狮王追剧神器/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/HomeActivity.java
-#sed -i 's/开源测试软件,请勿商用以及播放违法内容/专业礼品定制，贵金属、纪念钱币、生日钞礼品定制。/g'  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/LivePlayActivity.java
-#sed -i 's/暂无节目信息/生日钞——亿万分之一的心意/g'  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/LivePlayActivity.java
-#sed -i 's/6000/15000/g'  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/player/controller/VodController.java
+  #改自定义功能
+sed -i 's/自定义jar加载成功/LionMovies 播放配置加载成功,欢迎使用狮王追剧神器/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/HomeActivity.java
+sed -i 's/开源测试软件,请勿商用以及播放违法内容/专业礼品定制，贵金属、纪念钱币、生日钞礼品定制。/g'  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/LivePlayActivity.java
+sed -i 's/暂无节目信息/生日钞——亿万分之一的心意/g'  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/LivePlayActivity.java
+sed -i 's/6000/15000/g'  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/player/controller/VodController.java
 
-#更换整个文件
-cp $CURRENT_DIR/DIY/index.html  $CURRENT_DIR/$DIR/app/src/main/res/raw/index.html
-cp $CURRENT_DIR/DIY/colors.xml  $CURRENT_DIR/$DIR/app/src/main/res/values/colors.xml
-cp $CURRENT_DIR/DIY/strings.xml $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
-cp $CURRENT_DIR/DIY/dialog_about.xml   $CURRENT_DIR/$DIR/app/src/main/res/layout/dialog_about.xml
+  #更换整个文件
+ cp $CURRENT_DIR/DIY/index.html  $CURRENT_DIR/$DIR/app/src/main/res/raw/index.html
+ cp $CURRENT_DIR/DIY/colors.xml  $CURRENT_DIR/$DIR/app/src/main/res/values/colors.xml
+ cp $CURRENT_DIR/DIY/strings.xml $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
+
+ 
+# cp $CURRENT_DIR/DIY/ModelSettingFragment.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/fragment/ModelSettingFragment.java
+ #cp $CURRENT_DIR/DIY/fragment_model.xml     $CURRENT_DIR/$DIR/app/src/main/res/layout/fragment_model.xml
+ 
+ 
+# cp $CURRENT_DIR/DIY/ToolUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/ToolUtils.java
+ #cp $CURRENT_DIR/DIY/RemoteConfigName.java  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfigName.java
+# cp $CURRENT_DIR/DIY/RemoteConfig.java      $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfig.java
+# cp $CURRENT_DIR/DIY/LOG.java               $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/LOG.java
+# cp $CURRENT_DIR/DIY/FileUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/FileUtils.java
+
+# cp $CURRENT_DIR/DIY/UpdateDialog.java  $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\ui\dialog\UpdateDialog.java
+ #cp $CURRENT_DIR/DIY/dialog_update.xml  $CURRENT_DIR/$DIR/app/src/main/res/layout/dialog_update.xml  
+ cp $CURRENT_DIR/DIY/dialog_about.xml   $CURRENT_DIR/$DIR/app/src/main/res/layout/dialog_about.xml  
+ 
+# cp $CURRENT_DIR/DIY/ApiConfig.java    $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\api\ApiConfig.java
+# cp $CURRENT_DIR/DIY/App.java          $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\base\App.java
+# cp $CURRENT_DIR/DIY/HomeActivity.java $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\ui\activity\HomeActivity.java
+
+#取消选集全屏
+sed -i 's/if (showPreview \&\& !fullWindows) toggleFullPreview/\/\/if (showPreview \&\& !fullWindows) toggleFullPreview/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/DetailActivity.java
+#背景修改
+mv $CURRENT_DIR/DIY/app_bg.png $CURRENT_DIR/$DIR/app/src/main/res/drawable/app_bg.png
 
 #图标修改
 cp $CURRENT_DIR/DIY/app_icon.png $CURRENT_DIR/$DIR/app/src/main/res/drawable-hdpi/app_icon.png
 cp $CURRENT_DIR/DIY/app_icon.png $CURRENT_DIR/$DIR/app/src/main/res/drawable-xhdpi/app_icon.png
 cp $CURRENT_DIR/DIY/app_icon.png $CURRENT_DIR/$DIR/app/src/main/res/drawable-xxhdpi/app_icon.png
 mv $CURRENT_DIR/DIY/app_icon.png $CURRENT_DIR/$DIR/app/src/main/res/drawable-xxxhdpi/app_icon.png
-#背景修改
-mv $CURRENT_DIR/DIY/app_bg.png $CURRENT_DIR/$DIR/app/src/main/res/drawable/app_bg.png
 
 
 echo 'DIY end'
