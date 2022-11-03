@@ -30,10 +30,10 @@ sed -i 's/暂无节目信息/生日钞——亿万分之一的心意/g'  $CURREN
 sed -i 's/6000/15000/g'  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/player/controller/VodController.java
 
   #更换整个文件
- cp $CURRENT_DIR/DIY/index.html  $CURRENT_DIR/$DIR/app/src/main/res/raw/index.html
- cp $CURRENT_DIR/DIY/colors.xml  $CURRENT_DIR/$DIR/app/src/main/res/values/colors.xml
- cp $CURRENT_DIR/DIY/strings.xml $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
- 
+  cp $CURRENT_DIR/DIY/index.html  $CURRENT_DIR/$DIR/app/src/main/res/raw/index.html
+  cp $CURRENT_DIR/DIY/strings.xml $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
+  cp $CURRENT_DIR/DIY/dialog_about.xml   $CURRENT_DIR/$DIR/app/src/main/res/layout/dialog_about.xml  
+
  cp $CURRENT_DIR/DIY/colors.xml  $CURRENT_DIR/$DIR/app/src/main/res/values/colors.xml
  cp $CURRENT_DIR/DIY/shape_player_control_vod_seek.xml $CURRENT_DIR/$DIR/app/src/main/res/drawable/shape_player_control_vod_seek.xml
  
@@ -42,14 +42,13 @@ sed -i 's/6000/15000/g'  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/os
  
  
 # cp $CURRENT_DIR/DIY/ToolUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/ToolUtils.java
- #cp $CURRENT_DIR/DIY/RemoteConfigName.java  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfigName.java
+#cp $CURRENT_DIR/DIY/RemoteConfigName.java  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfigName.java
 # cp $CURRENT_DIR/DIY/RemoteConfig.java      $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfig.java
 # cp $CURRENT_DIR/DIY/LOG.java               $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/LOG.java
 # cp $CURRENT_DIR/DIY/FileUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/FileUtils.java
 
 # cp $CURRENT_DIR/DIY/UpdateDialog.java  $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\ui\dialog\UpdateDialog.java
- #cp $CURRENT_DIR/DIY/dialog_update.xml  $CURRENT_DIR/$DIR/app/src/main/res/layout/dialog_update.xml  
- cp $CURRENT_DIR/DIY/dialog_about.xml   $CURRENT_DIR/$DIR/app/src/main/res/layout/dialog_about.xml  
+#cp $CURRENT_DIR/DIY/dialog_update.xml  $CURRENT_DIR/$DIR/app/src/main/res/layout/dialog_update.xml  
  
 # cp $CURRENT_DIR/DIY/ApiConfig.java    $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\api\ApiConfig.java
 # cp $CURRENT_DIR/DIY/App.java          $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\base\App.java
