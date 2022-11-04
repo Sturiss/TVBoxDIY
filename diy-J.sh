@@ -51,7 +51,7 @@ sed -i 's/6000/15000/g'  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/os
  
 # cp $CURRENT_DIR/DIY/ApiConfig.java    $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\api\ApiConfig.java
 # cp $CURRENT_DIR/DIY/App.java          $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\base\App.java
-cp $CURRENT_DIR/DIY/HomeActivity.java $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\ui\activity\HomeActivity.java
+# cp $CURRENT_DIR/DIY/HomeActivity.java $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\ui\activity\HomeActivity.java
 
 #取消选集全屏
 sed -i 's/if (showPreview \&\& !fullWindows) toggleFullPreview/\/\/if (showPreview \&\& !fullWindows) toggleFullPreview/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/DetailActivity.java
