@@ -247,15 +247,32 @@ public class HomeActivity extends BaseActivity {
 
     private void initData() {
         SourceBean home = ApiConfig.get().getHomeSourceBean();
-        if (home != null && home.getName() != null && !home.getName().isEmpty())
+   //     if (home != null && home.getName() != null && !home.getName().isEmpty())
 
-            if(home.getName()=="LionMovies"){
-                tvName.setText(home.getName());
-            }
-            else{
-                tvName.setText("LionMovies>>"+home.getName());
-            }
+   //         if(home.getName()=="LionMovies"){
+   //             tvName.setText(home.getName());
+   //         }
+   //         else{
+   //             tvName.setText("LionMovies>>"+home.getName());
+   //         }
 
+        
+        
+             if (home != null && home.getName() != null && !home.getName().isEmpty())
+            tvName.setText(home.getName());
+            {
+                if(home.getName()=="LionMovies"){
+                    tvName.setText(home.getName());
+                }
+               else{
+             tvName.setText("LionMovies >>"+home.getName());
+             }
+        }
+        
+        
+       
+        
+        
         if (dataInitOk && jarInitOk) {
             showLoading();
             sourceViewModel.getSort(ApiConfig.get().getHomeSourceBean().getKey());
