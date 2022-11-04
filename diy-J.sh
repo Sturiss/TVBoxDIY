@@ -20,8 +20,7 @@ echo "RELEASE_STORE_FILE=./TVBoxOSC.jks" >>$CURRENT_DIR/$DIR/gradle.properties
 echo "RELEASE_KEY_ALIAS=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
 echo "RELEASE_STORE_PASSWORD=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
 echo "RELEASE_KEY_PASSWORD=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
-#名称修改
-#sed -i 's/TVBox/LionMovies/g' $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
+
 
   #改自定义功能
 sed -i 's/自定义jar加载成功/LionMovies 播放配置加载成功,欢迎使用狮王追剧神器/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/HomeActivity.java
