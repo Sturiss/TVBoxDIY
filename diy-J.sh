@@ -33,25 +33,25 @@ sed -i 's/6000/15000/g'  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/os
   cp $CURRENT_DIR/DIY/strings.xml $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
   cp $CURRENT_DIR/DIY/dialog_about.xml   $CURRENT_DIR/$DIR/app/src/main/res/layout/dialog_about.xml  
 
- cp -f $CURRENT_DIR/DIY/colors.xml  $CURRENT_DIR/$DIR/app/src/main/res/values/colors.xml
- cp -f $CURRENT_DIR/DIY/shape_player_control_vod_seek.xml $CURRENT_DIR/$DIR/app/src/main/res/drawable/shape_player_control_vod_seek.xml
+ cp -i $CURRENT_DIR/DIY/colors.xml  $CURRENT_DIR/$DIR/app/src/main/res/values/colors.xml
+ cp -i $CURRENT_DIR/DIY/shape_player_control_vod_seek.xml $CURRENT_DIR/$DIR/app/src/main/res/drawable/shape_player_control_vod_seek.xml
  
  
-cp -f $CURRENT_DIR/DIY/ModelSettingFragment.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/fragment/ModelSettingFragment.java
-cp -f $CURRENT_DIR/DIY/fragment_model.xml     $CURRENT_DIR/$DIR/app/src/main/res/layout/fragment_model.xml
+cp -i $CURRENT_DIR/DIY/ModelSettingFragment.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/fragment/ModelSettingFragment.java
+cp -i $CURRENT_DIR/DIY/fragment_model.xml     $CURRENT_DIR/$DIR/app/src/main/res/layout/fragment_model.xml
   
-cp -f $CURRENT_DIR/DIY/ToolUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/ToolUtils.java
-cp -f $CURRENT_DIR/DIY/RemoteConfigName.java  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfigName.java
-cp -f $CURRENT_DIR/DIY/RemoteConfig.java      $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfig.java
-cp -f $CURRENT_DIR/DIY/LOG.java               $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/LOG.java
-cp -f $CURRENT_DIR/DIY/FileUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/FileUtils.java
+cp -i $CURRENT_DIR/DIY/ToolUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/ToolUtils.java
+cp -i $CURRENT_DIR/DIY/RemoteConfigName.java  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfigName.java
+cp -i $CURRENT_DIR/DIY/RemoteConfig.java      $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfig.java
+cp -i $CURRENT_DIR/DIY/LOG.java               $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/LOG.java
+cp -i $CURRENT_DIR/DIY/FileUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/FileUtils.java
 
-cp -f $CURRENT_DIR/DIY/UpdateDialog.java  $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\ui\dialog\UpdateDialog.java
-cp -f $CURRENT_DIR/DIY/dialog_update.xml  $CURRENT_DIR/$DIR/app/src/main/res/layout/dialog_update.xml  
+cp -i $CURRENT_DIR/DIY/UpdateDialog.java  $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\ui\dialog\UpdateDialog.java
+cp -i $CURRENT_DIR/DIY/dialog_update.xml  $CURRENT_DIR/$DIR/app/src/main/res/layout/dialog_update.xml  
  
-cp -f $CURRENT_DIR/DIY/ApiConfig.java    $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\api\ApiConfig.java
-cp -f $CURRENT_DIR/DIY/App.java          $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\base\App.java
-cp -f $CURRENT_DIR/DIY/HomeActivity.java $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\ui\activity\HomeActivity.java
+cp -i CURRENT_DIR/DIY/ApiConfig.java    $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\api\ApiConfig.java
+cp -i $CURRENT_DIR/DIY/App.java          $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\base\App.java
+cp -i $CURRENT_DIR/DIY/HomeActivity.java $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\ui\activity\HomeActivity.java
 
 #取消选集全屏
 sed -i 's/if (showPreview \&\& !fullWindows) toggleFullPreview/\/\/if (showPreview \&\& !fullWindows) toggleFullPreview/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/DetailActivity.java
