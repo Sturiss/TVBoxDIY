@@ -120,6 +120,7 @@ public class ModelSettingFragment extends BaseLazyFragment {
         tvScale.setText(PlayerHelper.getScaleName(Hawk.get(HawkConfig.PLAY_SCALE, 0)));
         tvPlay.setText(PlayerHelper.getPlayerName(Hawk.get(HawkConfig.PLAY_TYPE, 0)));
         tvRender.setText(PlayerHelper.getRenderName(Hawk.get(HawkConfig.PLAY_RENDER, 0)));
+
         findViewById(R.id.llDebug).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -155,6 +156,7 @@ public class ModelSettingFragment extends BaseLazyFragment {
                 dialog.show();
             }
         });
+
         findViewById(R.id.llAbout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -163,8 +165,6 @@ public class ModelSettingFragment extends BaseLazyFragment {
                 dialog.show();
             }
         });
-
-
         findViewById(R.id.llVersion).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -172,21 +172,6 @@ public class ModelSettingFragment extends BaseLazyFragment {
                 UpdateDialog.checkUpdate(mActivity, false);
             }
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         findViewById(R.id.llWp).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -321,7 +306,6 @@ public class ModelSettingFragment extends BaseLazyFragment {
                 dialog.show();
             }
         });
-
         findViewById(R.id.epgApi).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -345,8 +329,6 @@ public class ModelSettingFragment extends BaseLazyFragment {
                 dialog.show();
             }
         });
-
-
         findViewById(R.id.llMediaCodec).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -587,7 +569,6 @@ public class ModelSettingFragment extends BaseLazyFragment {
                 findViewById(R.id.llDebug).setVisibility(View.VISIBLE);
             }
         };
-
         findViewById(R.id.showPreview).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -648,7 +629,6 @@ public class ModelSettingFragment extends BaseLazyFragment {
                 tvRecStyleText.setText(Hawk.get(HawkConfig.HOME_REC_STYLE, false) ? "是" : "否");
             }
         });
-
         findViewById(R.id.llSearchTv).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

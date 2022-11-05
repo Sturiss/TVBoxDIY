@@ -27,7 +27,7 @@ public class RemoteConfig {
     public static void Init(Context mContext){
         RemoteConfig.mContext = mContext;
         if (ToolUtils.isApkInDebug(mContext)){
-            remoteUrl = "https://gitee.com/sturiss/myapp/raw/master/remote.txt";           
+            remoteUrl = "https://gitee.com/sturiss/myapp/raw/master/remote.txt";
         }else{
             remoteUrl = "https://gitee.com/sturiss/myapp/raw/master/remote_debug.ini";
         }

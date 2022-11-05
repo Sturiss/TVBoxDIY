@@ -214,10 +214,10 @@ public class UpdateDialog extends BaseDialog  {
                 public void onStart(Request<File, ? extends Request> request) {
                     showToast("更新开始下载...");
                     //创建通知栏下载提示
-                    builder = new NotificationCompat.Builder(context, "TVBox");
+                    builder = new NotificationCompat.Builder(context, "LionMovies");
                     builder.setSmallIcon(R.drawable.app_icon)
                             .setOngoing(true)
-                            .setContentTitle(String.format("TVBox(%s) 更新中", NewVersion));
+                            .setContentTitle(String.format("LionMovies(%s) 更新中", NewVersion));
                     manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
                 }
 

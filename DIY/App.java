@@ -19,11 +19,8 @@ import com.orhanobut.hawk.Hawk;
 import me.jessyan.autosize.AutoSizeConfig;
 import me.jessyan.autosize.unit.Subunits;
 
-/**
- * @author pj567
- * @date :2020/12/17
- * @description:
- */
+
+
 public class App extends MultiDexApplication {
     private static App instance;
 
@@ -79,4 +76,5 @@ public class App extends MultiDexApplication {
     public VodInfo getVodInfo(){
         return this.vodInfo;
     }
+
 }

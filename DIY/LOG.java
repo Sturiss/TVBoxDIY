@@ -4,7 +4,6 @@ import android.content.Context;
 import android.util.Log;
 
 import com.github.tvbox.osc.base.App;
-import com.github.tvbox.osc.util.FileUtils;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -16,7 +15,7 @@ import java.util.Date;
  * @description:
  */
 public class LOG {
-    private static String TAG = "TVBox";
+    private static String TAG = "LionMovies";
     private static boolean isSaveLog = false;
     private static int saveDay = 2;
     private static File file;
