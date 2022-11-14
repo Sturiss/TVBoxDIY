@@ -41,13 +41,14 @@ cp -i $CURRENT_DIR/DIY/ModelSettingFragment.java $CURRENT_DIR/$DIR/app/src/main/
 cp -i $CURRENT_DIR/DIY/fragment_model.xml     $CURRENT_DIR/$DIR/app/src/main/res/layout/fragment_model.xml
   
 cp -i $CURRENT_DIR/DIY/ToolUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/ToolUtils.java
-cp -i $CURRENT_DIR/DIY/RemoteConfigName.java  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfigName.java
-cp -i $CURRENT_DIR/DIY/RemoteConfig.java      $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfig.java
 cp -i $CURRENT_DIR/DIY/LOG.java               $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/LOG.java
 cp -i $CURRENT_DIR/DIY/FileUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/FileUtils.java
 
-cp -i $CURRENT_DIR/DIY/UpdateDialog.java  $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\ui\dialog\UpdateDialog.java
-cp -i $CURRENT_DIR/DIY/dialog_update.xml  $CURRENT_DIR/$DIR/app/src/main/res/layout/dialog_update.xml  
+#cp -i $CURRENT_DIR/DIY/RemoteConfigName.java  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfigName.java
+#cp -i $CURRENT_DIR/DIY/RemoteConfig.java      $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfig.java
+
+#cp -i $CURRENT_DIR/DIY/UpdateDialog.java  $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\ui\dialog\UpdateDialog.java
+#cp -i $CURRENT_DIR/DIY/dialog_update.xml  $CURRENT_DIR/$DIR/app/src/main/res/layout/dialog_update.xml  
  
 #cp -i CURRENT_DIR/DIY/ApiConfig.java    $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\api\ApiConfig.java
 #cp -i $CURRENT_DIR/DIY/App.java          $CURRENT_DIR/$DIR/app\src\main\java\com\github\tvbox\osc\base\App.java
