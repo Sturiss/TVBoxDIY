@@ -37,12 +37,12 @@ sed -i 's/10000/15000/g'  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/o
  cp  $CURRENT_DIR/DIY/shape_player_control_vod_seek.xml $CURRENT_DIR/$DIR/app/src/main/res/drawable/shape_player_control_vod_seek.xml
  
  
-cp -i $CURRENT_DIR/DIY/ModelSettingFragment.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/fragment/ModelSettingFragment.java
-cp -i $CURRENT_DIR/DIY/fragment_model.xml     $CURRENT_DIR/$DIR/app/src/main/res/layout/fragment_model.xml
+#cp -i $CURRENT_DIR/DIY/ModelSettingFragment.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/fragment/ModelSettingFragment.java
+#cp -i $CURRENT_DIR/DIY/fragment_model.xml     $CURRENT_DIR/$DIR/app/src/main/res/layout/fragment_model.xml
   
-cp -i $CURRENT_DIR/DIY/ToolUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/ToolUtils.java
-cp -i $CURRENT_DIR/DIY/LOG.java               $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/LOG.java
-cp -i $CURRENT_DIR/DIY/FileUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/FileUtils.java
+#cp -i $CURRENT_DIR/DIY/ToolUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/ToolUtils.java
+#cp -i $CURRENT_DIR/DIY/LOG.java               $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/LOG.java
+#cp -i $CURRENT_DIR/DIY/FileUtils.java         $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/FileUtils.java
 
 #cp -i $CURRENT_DIR/DIY/RemoteConfigName.java  $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfigName.java
 #cp -i $CURRENT_DIR/DIY/RemoteConfig.java      $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/util/RemoteConfig.java
